@@ -22,9 +22,15 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "heroImgI": "url('/public/images/hero-imageI.png')",
+        "heroImgII": "url('/public/images/hero-imageII.png')",
+        "heroImgIII": "url('/public/images/hero-imageIII.png')",
+        "heroImgIV": "url('/public/images/hero-imageIV.png')",
+      },
       fontFamily: {
-        poppins:
-          ["var(--font-poppins)"],
+        ppn:
+          ["Poppins", 'sans-serif'],
       },
       colors: {
         border: "var(--border)",

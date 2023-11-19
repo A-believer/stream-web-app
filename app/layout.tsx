@@ -19,7 +19,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn(
-          "antialiased relative max-w-[1440px] font-poppins mx-auto font-",
+          "antialiased relative max-w-[1440px] font-ppn mx-auto font-",
           fontPoppins.variable
       )}>
         <Providers>
