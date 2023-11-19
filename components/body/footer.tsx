@@ -7,7 +7,7 @@ import logo from "../../public/images/logo-footer.png"
 
 function Footer() {
   return (
-    <footer className='bg-[#138294] text-white xl:pt-[66px] md:pt-14 py-10 xl:pb-[25px] md:pb-24 xl:pl-9 md:pl-9 px-6 xl:pr-[86px] md:pr-9  lg:mx-[45px] md:mx-10 mx-[18px] xl:mb-[69px] md:mb-12 mb-8 rounded-[20px] text-lg leading-[34px] mt-[100px]'>
+    <footer className='font-ppn bg-[#138294] text-white xl:pt-[66px] md:pt-14 py-10 xl:pb-[25px] md:pb-24 xl:pl-9 md:pl-9 px-6 xl:pr-[86px] md:pr-9  lg:mx-[45px] md:mx-10 mx-[18px] xl:mb-[69px] md:mb-12 mb-8 rounded-[20px] text-lg leading-[34px] mt-[100px]'>
       <div className='flex lg:flex-row flex-col justify-between gap-y-[100px]'>
         <div>
           <Image src={logo} alt='logo' className='lg:w-[309px] w-[165px] lg:h-[130px] h-[69px] object-contain'/>

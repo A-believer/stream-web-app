@@ -18,7 +18,7 @@ function Navbar() {
   const { theme } = useTheme()
   const params = usePathname()
   return (
-    <header className='border-b border-[#828282]/30 flex justify-between items-center xl:pl-[50px] xl:pr-20 xl:py-0 md:px-12 md:py-11 px-6 py-6'>
+    <header className='border-b border-[#828282]/30 flex justify-between items-center xl:pl-[50px] xl:pr-20 xl:py-0 md:px-12 md:py-11 px-6 py-6 font-ppn'>
       <Link href={`/`} className='md:w-[201.25px] w-[128.576px] h-auto '>
         <Image src={logo} alt='logo' priority className="w-full h-full object-contain"/>
       </Link>  

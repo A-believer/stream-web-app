@@ -11,7 +11,7 @@ import WaystoHelp from '@/components/body/ways-to-help'
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="font-ppn">
       <Hero />
       <Metric />
       <SeekingHelp />
