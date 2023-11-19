@@ -11,9 +11,9 @@ function Providers({ children }: React.PropsWithChildren) {
 
   return (
     <ThemeProvider
-    attribute="class"
-            
-            enableSystem
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
       disableTransitionOnChange>
       <Navbar/>
       {children}
