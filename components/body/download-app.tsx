@@ -2,7 +2,9 @@ import React from 'react'
 
 function DownloadApp() {
   return (
-    <div>DownloadApp</div>
+    <section className='font-ppn text-foreground'>
+      DownloadApp
+    </section>
   )
 }
 
