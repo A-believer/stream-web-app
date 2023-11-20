@@ -1,6 +1,9 @@
 import peoplei from "../public/images/campaignI.png"
 import peopleii from "../public/images/campaignII.png"
 import peopleiii from "../public/images/campaignIII.png"
+import happiness from "../public/icons/happiness.svg"
+import love from "../public/icons/love.svg"
+import social from "../public/icons/social.svg"
 
 export const data = [
     {
@@ -31,4 +34,25 @@ export const data = [
         raised: "35,255",
         supporters: "2,144"
     } 
+]
+
+export const helpData = [
+    {
+        id: 1,
+        icon: happiness,
+        head: "Give Happiness",
+        subHead: "Giving happiness to others is one of the most fulfilling things you can do in life"
+    },
+    {
+        id: 2,
+        icon: love,
+        head: "Share Love",
+        subHead: "When you share love to those around you, you create a ripple effect of kindness"
+    },
+    {
+        id: 3,
+        icon: social,
+        head: "Build Socially",
+        subHead: "Building socially requires not  just connecting with others but also actively contributing"
+    },
 ]
