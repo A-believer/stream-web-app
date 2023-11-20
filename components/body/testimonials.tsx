@@ -17,28 +17,28 @@ import stars from "../../public/icons/stars.svg"
 
 function Testimonials() {
   return (
-    <section className='font-ppn md:my-[140px] w-full'>
+    <section className='font-ppn md:my-[140px] w-full xl:mx-0 md:px-8  px-5 mt-10'>
       <h3 className='md:text-5xl text-2xl md:leading-[70px] leading-10 font-semibold text-center w-full'>Testimonials</h3>
 
-      <div className='flex justify-between items-center gap-x-16 mt-10'>
-        <div className='self-start'>
-          <p className='xl:w-[590px]  md:text-2xl text-lg md:leading-[60px] leading-[45px] font-medium'>"This platform is a Godsend! It's a portal for volunteers to connect with people in need. My family has been in critical health condition for almost a year but this platform made it so easy for me and connected me with people willing to help, as i am not so stable financially."</p>
+      <div className='flex items-center gap-x-6 justify-center mt-10 w-full'>
+        <div className=''>
+          <p className='xl:w-[500px] w-full md:text-2xl text-lg md:leading-[60px] leading-[45px] font-medium'>"This platform is a Godsend! It's a portal for volunteers to connect with people in need. My family has been in critical health condition for almost a year but this platform made it so easy for me and connected me with people willing to help, as i am not so stable financially."</p>
           <p className='text-[#138294] text-2xl mt-10 mb-4'>Mariam. C</p>
           <Image src={stars} alt='stars'/>
         </div>
-      <div className='xl:flex hidden flex-wrap gap-[5px]'>
-        <Image src={t1} alt='images'/>
-        <Image src={t2} alt='images'/>
-        <Image src={t3} alt='images'/>
-        <Image src={t4} alt='images'/>
-        <Image src={t5} alt='images'/>
-        <Image src={t6} alt='images'/>
-        <Image src={t7} alt='images'/>
-        <Image src={t8} alt='images'/>
-        <Image src={t9} alt='images'/>
-        <Image src={t10} alt='images'/>
-        <Image src={t11} alt='images'/>
-        <Image src={t12} alt='images'/>
+      <div className='xl:grid hidden grid-cols-4 gap-[5px] items-center'>
+        <Image src={t1} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t2} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t3} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t4} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t5} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t6} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t7} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t8} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t9} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t10} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t11} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
+        <Image src={t12} alt='images' width={178} height={187} className='object-cover w-[178px] h-[187px]'/>
       </div>
       </div>
       

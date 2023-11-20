@@ -3,7 +3,7 @@ import React from 'react'
 import rocket from "../../public/images/rocket.png"
 function Metric() {
   return (
-    <section className='font-ppn text-foreground flex md:flex-row flex-col items-center justify-between xl:mx-20 md:mx-12 ml-5 mr-12 xl:my-20 md:my-14 my-8'>
+    <section className='font-ppn text-foreground flex md:flex-row flex-col items-center justify-between xl:mx-20 md:mx-12 ml-5 mr-12 xl:my-28 md:my-14 my-8'>
       <Image src={rocket} alt='rocket'  className='xl:w-[626px] xl:h-[626px] md:w-[317px] md:h-[317px] w-full h-full'/>
 
       <div className='flex justify-center items-center  xl:gap-x-[160px] md:gap-x-[150px] gap-x-[80px] xl:gap-y-[77px] md:gap-y-[40px] gap-y-[35px] flex-wrap bg-[#138294]/5 xl:py-20 md:py-[71px] py-[60px] xl:px-10 md:px-6 rounded-[20px] relative'>
