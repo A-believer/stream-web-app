@@ -35,7 +35,7 @@ function Campaigns() {
         </div>
       </div>
       
-      <div className='grid xl:grid-cols-3 md:grid-col-2 grid-cols-1 gap-x-[15px] overflow-hidden'>
+      <div className='grid xl:grid-cols-3 md:grid-col-2 grid-cols-1 gap-[15px] overflow-hidden'>
        {
           data.map((items) => (
             <div key={items.id} className='border border-black/30 px-6 py-5 flex flex-col gap-y-6 w-full rounded-[20px]'>
