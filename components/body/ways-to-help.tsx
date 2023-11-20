@@ -1,13 +1,15 @@
+"use client"
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import React from 'react'
 import imagei from "../../public/images/waytohelpi.png"
 import imageii from "../../public/images/waytohelpii.png"
-import Link from 'next/link'
+import { useTheme } from 'next-themes'
 
 function WaystoHelp() {
+  const{theme} = useTheme()
   return (
-    <section className='xl:px-[57px] md:px-10 px-5 xl:py-10 py-5 text-foreground w-full'>
+    <section className='xl:px-[57px] md:px-10 px-5 xl:py-10 py-5 text-foreground w-full space-y-10'>
       <div className='text-center space-y-5'>
         <h3 className='md:text-5xl text-2xl md:leading-[70px] leading-10 font-semibold'>Ways to Help</h3>
         <p className='text-lg leading-9 font-medium tracking-[0.09px]'>This goal is ambitious, but we know it’s achievable with your help. Here's how you can take action today</p>
@@ -22,7 +24,7 @@ function WaystoHelp() {
           </p>
         </div>
 
-        <div className='p-9 bg-[#ebfcff]'>
+        <div className={`p-9 ${theme === "light" ? "bg-[#ebfcff]": "bg-[#172C2E]"}`}>
         <Image src={imagei} alt='Image I'/>
         </div>
       </div>
@@ -36,7 +38,7 @@ function WaystoHelp() {
           </p>
         </div>
 
-        <div className='p-9 bg-[#ebfcff]'>
+        <div className={`p-9 ${theme === "light" ? "bg-[#ebfcff]": "bg-[#172C2E]"}`}>
         <Image src={imageii} alt='Image II'/>
         </div>
       </div>

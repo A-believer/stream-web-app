@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import arrow from "../../public/icons/arrow-right-faq.svg"
+import arrowDark from "../../public/icons/arrow-right-direction-dark.svg"
+import { useTheme } from 'next-themes'
 const faqData = [
   {
     id: 1,
@@ -32,7 +34,7 @@ const faqData = [
 
 function Faqs() {
   const [openQuestion, setOpenQuestion] = useState<number | null>(null)
-
+  const {theme} = useTheme()
   function handleQuestionOpen(id: number) {
    setOpenQuestion((prevIndex) => (prevIndex === id ? null : id))
     }
@@ -52,7 +54,7 @@ function Faqs() {
               {openQuestion === faq.id &&
                 <p className='text-sm leading-7 xl:w-full md:w-[90%] w-full'>{faq.answer}</p>}
             </div>
-            <Image src={arrow} alt="" onClick={() => handleQuestionOpen(faq.id)} className={`${openQuestion === faq.id ? "" : "rotate-90" } self-start`} />
+            <Image src={theme === "light" ? arrow : arrowDark} alt="" onClick={() => handleQuestionOpen(faq.id)} className={`${openQuestion === faq.id ? "" : "rotate-90" } self-start`} />
           </div>
         ))}
       </div>
