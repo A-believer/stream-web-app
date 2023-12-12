@@ -1,9 +1,10 @@
-import React from 'react'
 
-function HowItWorks() {
+export default async function HowItWorks() {
+  
   return (
-    <div>HowItWorks</div>
+    <div className='flex w-full justify-center flex-col gap-y-10 items-center'>
+      <div></div>
+      
+    </div>
   )
 }
-
-export default HowItWorks

@@ -76,7 +76,7 @@ function Navbar() {
             <Link href={`/`}>Home</Link>
           </li>
           <li className={`${params === "/about-us" ? "text-[#138294] bg-[#D9D9D9]/40 " : "text-foreground bg-transparent"} md:py-9 py-5 md:pl-12 pl-6`}>
-            <Link href={`/about-us`}>About Us</Link>
+            <Link href={`/users`}>Users</Link>
           </li>
           <li className={`${params === "/how-it-works" ? "text-[#138294] bg-[#D9D9D9]/40" : "text-foreground bg-transparent"} md:py-9 py-5 md:pl-12 pl-6`}>
             <Link href={`/how-it-works`}>How It Works</Link>
