@@ -8,13 +8,12 @@ export default async function User({params: {id}}) {
     const userPost = await getUserPost(id)
     
     const [user, posts] = await Promise.all([userData, userPost])
-    console.log(posts)
-    console.log(user)
+    
     return (
         <div className='text-center'>
             <h1>User Information</h1>
             <h3>{user.name}</h3>
-            <p>{posts?.map(post => ( 
+            <p>{posts?.map((post: { id: React.Key | null | undefined; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined }) => ( 
                 <div key={post.id}>
                     {post.title}
                 </div>

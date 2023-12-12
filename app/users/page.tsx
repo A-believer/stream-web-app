@@ -8,7 +8,7 @@ export default async function UsersPage() {
       <div>
           <h1>Users</h1>
           <div className='flex flex-col'>{
-              users?.map((user) => (
+              users?.map((user: { id: React.Key | null | undefined; name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined }) => (
                   <Link href={`/users/${user.id}`} key={user.id}>
                       {user?.name}
               </Link>
