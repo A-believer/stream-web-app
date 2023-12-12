@@ -3,7 +3,12 @@ import getUserPost from '@/app/libs/getUserPost'
 import Link from 'next/link'
 import React from 'react'
 
-export default async function User({params: {id}}) {
+interface ParamsProps {
+    params: {
+        id: string
+    }
+}
+ const  User: React.FC<ParamsProps> = async ({params: {id}}) => {
   const userData = await getUser(id)
     const userPost = await getUserPost(id)
     
@@ -22,3 +27,5 @@ export default async function User({params: {id}}) {
         </div>
   )
 }
+
+export default User
